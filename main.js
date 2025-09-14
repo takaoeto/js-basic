@@ -35,3 +35,29 @@ calcResult = String(tenNumber);
 console.log(calcResult);
 calcResult = tenNumber.toString();
 console.log(calcResult);
+
+let array = ['apple', 'banana', 'grape', true, 2, 6];
+
+const coffee = {
+  name: 'Chocolate Mocha',
+  size: 350,
+  isHot: true,
+  TOPPINGS: ['Cinammon', 'Caramel'],
+  nuturition: {
+    calories: 430,
+    sugars: 53,
+    caffeine: 100,
+  },
+};
+// console.log(coffee);
+coffee.isHot = false;
+console.log(coffee);
+coffee.barista = 'takao';
+console.log(typeof coffee.size);
+
+function add(num1, num2) {
+  return num1 + num2;
+}
+
+console.log(returnedValue);
+const returnedValue = add(2, 3);
