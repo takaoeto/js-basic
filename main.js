@@ -108,15 +108,44 @@
 //   console.log(fruit);
 // }
 
-//セッション#69
-//for in文(オブジェクトに対して使う（オブジェクトの中身を繰り返し処理で取得していきたい場合とか）)
+// セッション#70
+// for in文(オブジェクトに対して使う（オブジェクトの中身を繰り返し処理で取得していきたい場合とか）)
+// const coffee = {
+//   name: 'Cafe Latte',
+//   price: 600,
+//   isHot: true,
+// };
+
+// for (const key in coffee) {
+//   console.log(key);
+//   console.log(coffee[key]);
+// }
+
+// セッション#71
 const coffee = {
   name: 'Cafe Latte',
   price: 600,
   isHot: true,
 };
 
+// break; はswitch文意外にも繰り返し文に対して使用できる
+//以下はkeyが"isHot"の時に処理を抜けるような処理
 for (const key in coffee) {
+  if (key === 'isHot') {
+    console.log('break!');
+    break;
+  }
+  console.log(key);
+  console.log(coffee[key]);
+}
+
+//#72
+//continue; は特定の繰り返しをスキップする。そのタイミングでcontnue以下の処理は実行されない
+for (const key in coffee) {
+  if (key === 'price') {
+    console.log('continue!');
+    continue;
+  }
   console.log(key);
   console.log(coffee[key]);
 }
