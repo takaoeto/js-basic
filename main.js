@@ -91,7 +91,19 @@
 // } while (tomatoCount < 1);
 
 //セッション#68
-for (let pumpkinCount = 1, i = 1; pumpkinCount <= 10; pumpkinCount++, i += 1) {
-  console.log(`かぼちゃの数： ${pumpkinCount}`);
-  console.log(`iの値 ${i}`);
+// for (let pumpkinCount = 1, i = 1; pumpkinCount <= 10; pumpkinCount++, i += 1) {
+//   console.log(`かぼちゃの数： ${pumpkinCount}`);
+//   console.log(`iの値 ${i}`);
+// }
+
+//セッション#69
+//for文
+const fruits = ['Apple', 'Banana', 'Grape', 'Orange', 'Pine'];
+for (let i = 0; i < fruits.length; i++) {
+  console.log(fruits[i]);
+}
+//for of文（拡張for文的な）
+//なぜ「const」でOKなのか？ → for of文の場合は一周ごとに値が削除されて居るイメージだからconstでも値が更新されて居るように見える
+for (const fruit of fruits) {
+  console.log(fruit);
 }
