@@ -98,12 +98,25 @@
 
 //セッション#69
 //for文
-const fruits = ['Apple', 'Banana', 'Grape', 'Orange', 'Pine'];
-for (let i = 0; i < fruits.length; i++) {
-  console.log(fruits[i]);
-}
+// const fruits = ['Apple', 'Banana', 'Grape', 'Orange', 'Pine'];
+// for (let i = 0; i < fruits.length; i++) {
+//   console.log(fruits[i]);
+// }
 //for of文（拡張for文的な）
 //なぜ「const」でOKなのか？ → for of文の場合は一周ごとに値が削除されて居るイメージだからconstでも値が更新されて居るように見える
-for (const fruit of fruits) {
-  console.log(fruit);
+// for (const fruit of fruits) {
+//   console.log(fruit);
+// }
+
+//セッション#69
+//for in文(オブジェクトに対して使う（オブジェクトの中身を繰り返し処理で取得していきたい場合とか）)
+const coffee = {
+  name: 'Cafe Latte',
+  price: 600,
+  isHot: true,
+};
+
+for (const key in coffee) {
+  console.log(key);
+  console.log(coffee[key]);
 }
