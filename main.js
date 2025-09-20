@@ -35,7 +35,7 @@ ok = false && false;
 ok = 'hi' && 'hi';
 console.log(ok);
 
-//セッション58
+//セッション#58
 let userName = '' || 'User';
 console.log(userName);
 //??を使うことで、空文字として判定されるようになる
@@ -48,32 +48,31 @@ let okk;
 okk = okk ? 'OK!' : 'NG...';
 console.log(okk);
 
+//セッション#64
 function vegetableColor(vegetable) {
   switch (vegetable) {
-    case 'tomato':
-      console.log(`${vegetable} is red`);
+    case 'tomato': {
+      const message = `${vegetable} is red`;
+      console.log(message);
       break;
+    }
     case 'carrot':
-    case 'orange':
-    case 'pumpkin':
-      console.log(`${vegetable} is orange`);
+    case 'pumpkin': {
+      const message = `${vegetable} is orange`;
+      console.log(message);
       break;
-    case 'onion':
-      console.log(`${vegetable} is white`);
+    }
+    case 'onion': {
+      const message = `${vegetable} is white`;
+      console.log(message);
       break;
-    default:
-      console.log('nobudy knows...');
+    }
+    default: {
+      const message = `Not Found`;
+      console.log(message);
       break;
+    }
   }
-  // if (vegetable === 'tomato') {
-  //   console.log('tomato is red');
-  // } else if (vegetable === 'pumpkin') {
-  //   console.log('pumpkin is orange');
-  // } else if (vegetable === 'onion') {
-  //   console.log('onion is white');
-  // } else {
-  //   console.log('nobudy knows...');
-  // }
 }
 
-vegetableColor('orange');
+vegetableColor('carrot');
