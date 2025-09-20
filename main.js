@@ -1,55 +1,45 @@
-let count;
-console.log(count);
-let newCount = 30;
-console.log(newCount);
-let tomato$Count;
+// let ok = true;
+// let maybeOk = false;
 
-const price = 30;
-let appleCount = price * 7;
-console.log(appleCount);
+// //
+// ok = 1 === 1;
+// ok = 'hello' === 'hello';
+// ok = 'hello' !== 'hello';
+// //同値演算子(これは使わない)
+// // ok = 1 == '1';
 
-const userName = 'yoshipi';
-let string = `Hello ${userName} !`;
-console.log(string);
+// const coffee1 = { name: 'Cafe Latte' };
+// const coffee2 = { name: 'Cafe Latte' };
+// const coffee3 = coffee1;
 
-const a = '  \\ is\n singleQuate !';
-console.log(a);
+// ok = coffee1 === coffee3;
+// ok = coffee1.name === coffee2.name;
+// const fruits1 = ['Apple', 'Banana'];
+// const fruits2 = ['Apple', 'Banana'];
+// ok = fruits1 === fruits2;
 
-const b = `aaaaa
-bbbbb`;
-console.log(b);
-const userInput = '10.9';
-let calcResult;
-calcResult = Number(userInput) + 10;
-calcResult = parseInt(userInput) + 10;
-calcResult = parseFloat(userInput) + 10;
-calcResult = +userInput + 10;
+// ok = 1 >= 0;
+// ok = 'a' > 'b';
+// ok = 'A' < 'b';
+// ok = 100;
+// ok = 'false';
+// ok = {};
 
-const tenNumber = 10;
-calcResult = String(tenNumber);
-calcResult = tenNumber.toString();
+// if (ok) {
+//   console.log(ok);
+//   // console.log('OK!');
+// } else {
+//   console.log('NO!');
+// }
+// ok = false && false;
+// ok = 'hi' && 'hi';
+// console.log(ok);
 
-let array = ['apple', 'banana', 'grape', true, 2, 6];
-
-const coffee = {
-  name: 'Chocolate Mocha',
-  size: 350,
-  isHot: true,
-  TOPPINGS: ['Cinammon', 'Caramel'],
-  nuturition: {
-    calories: 430,
-    sugars: 53,
-    caffeine: 100,
-  },
-};
-// console.log(coffee);
-coffee.isHot = false;
-coffee.barista = 'takao';
-
-function add(num1, num2) {
-  console.log(num1, num2);
-  const value = num1 + num2;
-  return value;
-}
-
-const returnedValue = add(2, 3);
+//セッション58
+let userName = '' || 'User';
+console.log(userName);
+//??を使うことで、空文字として判定されるようになる
+userName = '' ?? 'User';
+console.log(userName);
+//『??』と論理演算子（|| &&）は同時に使うことができない。
+// userName = '' ?? 'User' && 1
