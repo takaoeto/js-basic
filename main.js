@@ -76,3 +76,16 @@ function vegetableColor(vegetable) {
 }
 
 vegetableColor('carrot');
+
+//セッション#66
+let number = 0;
+while (number < 10) {
+  number++;
+  console.log('while:' + +number);
+}
+
+tomatoCount = 0;
+do {
+  tomatoCount += 1;
+  console.log('do-while:' + tomatoCount);
+} while (tomatoCount < 1);
